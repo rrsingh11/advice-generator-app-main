@@ -1,38 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
     background-color: hsl(217, 19%, 24%);
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
 }
 main{
     width: 98vw;
     height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #card{
     background-color: hsl(217, 19%, 38%);
     display: flex;
     flex-direction: column;
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    align-items: center;
+    text-align: center;
+    padding: 5px 20px;
 
+}
+
+img[alt="play"]{
+    width:80%;
+    align-self: center;
+}
+
+h1{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+p{
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
 }
 /*color*/
 .cyan{
-    fill: hsl(193, 38%, 86%);
     color: hsl(193, 38%, 86%);
 }
-#dice{
-    display: inline-block;
-    text-align: center;
-    padding: 0.6% 0.4%;
-    border-radius: 50%;
-    background-color: hsl(150, 100%, 66%);
-    margin: 10%;
-    width: 2%;
+.neon{
+    color: hsl(150, 100%, 66%);
 }
+/*color*/
+#dice{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+}
+
 #dice img{
-    width: 60%;
-    height: 60%;
-    margin: 8% 0% 0% 0%;
-    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#dice:active{
+    box-shadow: 0 0 50px hsl(150, 100%, 66%) ;
+}
+
+@media (max-width: 720px){
+    #card{
+        max-width: 350px;
+    }
 }
 
 
